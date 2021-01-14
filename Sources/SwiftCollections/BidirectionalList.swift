@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class BidirectionalList<T> {
+open class BidirectionalList<T> {
     public typealias Element = T
     public typealias Index = ListIndex<Element>
     @usableFromInline internal typealias Value = ListIndex<Element>.Value

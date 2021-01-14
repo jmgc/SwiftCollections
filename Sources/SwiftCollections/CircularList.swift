@@ -7,12 +7,7 @@
 
 import Foundation
 
-public enum CircularListError: Error {
-    case iteratorsFromDifferentCircularLists
-    case iteratorsWithDifferentOffsets
-}
-
-public class CircularList<T> {
+open class CircularList<T> {
     public typealias Element = T
     public typealias Index = ListIndex<Element>
     @usableFromInline internal typealias Value = ListIndex<Element>.Value
