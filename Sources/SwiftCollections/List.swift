@@ -57,7 +57,7 @@ public protocol List: AnyObject, BidirectionalCollection {
 internal class ListValue<T> {
     @usableFromInline internal let data: T?
     @usableFromInline internal var next: ListValue<T>?
-    @usableFromInline internal var previous: ListValue<T>?
+    @usableFromInline internal weak var previous: ListValue<T>?
     @usableFromInline internal let last: ListValue<T>?
 
     @inlinable
